@@ -71,18 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Produtos "
     const produtos = [
-      { id: 1, nome: "Mouse Gamer ", preco: 199.90, imagem: "img/ella-don-0tkFBsoYM6M-unsplash.jpg" },
-      { id: 2, nome: "Teclado Mecânico ", preco: 349.90, imagem: "img/teclado.webp" },
-      { id: 3, nome: "Headset Surround", preco: 400.90, imagem: "img/H510-1_1024x1024@2x.webp" },
-      { id: 4, nome: "Headset Gatinho ", preco: 259.90, imagem: "img/K9-BLUE_2.webp" },
-      { id: 5, nome: "Monitor Curvo 144Hz", preco: 1299.90, imagem: "img/monitorsuperframe.jpg" },
-      { id: 6, nome: "Cadeira Gamer ", preco: 800.90, imagem: "img/photo-1670946839270-cc4febd43b09.avif" },
-      { id: 7, nome: "Microfone gamer", preco: 349.90, imagem: "img/microfone.webp" },
-      { id: 8, nome: "Controle gamer", preco: 249.90, imagem: "img/comtrole.jpg" },
-      { id: 9, nome: "Caixa de Som Gamer", preco: 399.90, imagem: "img/caixadesom.webp" },
-      { id: 10, nome: "Mousepad", preco: 200.90, imagem: "img/mousepad.jpeg" },
-      { id: 11, nome: "Webcam Full HD 1080p", preco: 289.90, imagem: "img/webcam.webp" },
-      { id: 12, nome: "Suporte para Headset ", preco: 89.90, imagem: "img/suporteparafone.jpg" },
+      { id: 1, nome: "Mouse Gamer ", preco: 199.90, imagem: "ella-don-0tkFBsoYM6M-unsplash.jpg" },
+      { id: 2, nome: "Teclado Mecânico ", preco: 349.90, imagem: "teclado.webp" },
+      { id: 3, nome: "Headset Surround", preco: 400.90, imagem: "H510-1_1024x1024@2x.webp" },
+      { id: 4, nome: "Headset Gatinho ", preco: 259.90, imagem: "K9-BLUE_2.webp" },
+      { id: 5, nome: "Monitor Curvo 144Hz", preco: 1299.90, imagem: "monitorsuperframe.jpg" },
+      { id: 6, nome: "Cadeira Gamer ", preco: 800.90, imagem: "photo-1670946839270-cc4febd43b09.avif" },
+      { id: 7, nome: "Microfone gamer", preco: 349.90, imagem: "microfone.webp" },
+      { id: 8, nome: "Controle gamer", preco: 249.90, imagem: "comtrole.jpg" },
+      { id: 9, nome: "Caixa de Som Gamer", preco: 399.90, imagem: "caixadesom.webp" },
+      { id: 10, nome: "Mousepad", preco: 200.90, imagem: "mousepad.jpeg" },
+      { id: 11, nome: "Webcam Full HD 1080p", preco: 289.90, imagem: "webcam.webp" },
+      { id: 12, nome: "Suporte para Headset ", preco: 89.90, imagem: "suporteparafone.jpg" },
     ];
 
     const grid = document.getElementById("produtos");
