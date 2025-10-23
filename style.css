@@ -1,0 +1,212 @@
+/* ==== RESET ==== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0b001a, #1a0033);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==== CONTAINER ==== */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 0 25px rgba(162, 0, 255, 0.2);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b066ff;
+}
+
+/* ==== INPUTS ==== */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==== BOTÕES ==== */
+button {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(162, 0, 255, 0.6), rgba(255, 0, 255, 0.3));
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transform: scale(1.03);
+}
+
+/* ==== LINKS ==== */
+a {
+  color: #b066ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #e9b8ff;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+  color: #b066ff;
+  font-size: 1.2rem;
+}
+
+header .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contadorCarrinho {
+  background: rgba(162, 0, 255, 0.2);
+  border-radius: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ==== LOJA ==== */
+main.loja {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.produto {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(162, 0, 255, 0.3);
+}
+
+.produto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.produto h3 { margin: 10px 0; }
+.produto p  { color: #b066ff; font-weight: bold; }
+
+/* ==== CARRINHO ==== */
+.carrinho-page {
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.carrinho-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.carrinho-page th, .carrinho-page td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+#totalGeral {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: right;
+  color: #b066ff;
+}
+
+/* ==== PAGAMENTO ==== */
+.form-pagamento, .resumo {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.linha {
+  display: flex;
+  gap: 10px;
+}
+
+.pix-option {
+  text-align: center;
+  margin-top: 15px;
+  color: #d38cff;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==== RESPONSIVO ==== */
+@media (max-width: 700px) {
+  header { flex-direction: column; align-items: stretch; }
+  .produtos { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .container { width: 95%; }
+}
