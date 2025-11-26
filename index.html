@@ -1,21 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login - Loja Paola Gamer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Entrar</h1>
-    <form id="formLogin">
-      <input type="email" id="email" placeholder="E-mail" required />
-      <input type="password" id="senha" placeholder="Senha" required />
-      <button type="submit">Entrar</button>
-    </form>
-    <p>Não tem conta? <a href="cadastro.html">Clique aqui para se cadastrar</a></p>
+    <header class="header">
+        <div class="menu-container">
+            <h1 class="logo">Portfólio</h1>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+      <section class="intro" id="inicio">
+        <div class="intro-content">
+        <h2>Olá, sou <span class="nome-digitando">Paola Domingos</span></h2>
+        <p class="job-title">Desenvolvedora Full Stack</p>
+      <div class="buttons">
+        <a href="Paola Domingos.pdf" class="btn primary">Download CV</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/paolaws2/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/sPaolaw" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="intro-image">
+      <img src="WhatsApp Image 2024-10-25 at 16.54.24 (1).jpeg" alt="Sua Foto">
+    </div>
+  </section> 
+              <section class="sobre animate-scroll">
+                <h2>Sobre mim</h2>
+                <p>
+              Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedora Full Stack com foco em criar aplicações completas, funcionais e visualmente atraentes.
+Tenho experiência em HTML, CSS, JavaScript, React.js, Java, Python e SQL, unindo o front-end e o back-end para entregar soluções eficientes e bem estruturadas.
+Busco oportunidades para contribuir com projetos desafiadores, aprimorar minhas habilidades e agregar valor às equipes com dedicação, criatividade e comprometimento.
+            </p>
+  </section>
+  <section class="skills animate-scroll" id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <i class="fab fa-html5" style="color: #007BFF;"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt" style="color: #007BFF;"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-java" style="color: #007BFF;"></i>
+        <p>Java</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js" style="color: #007BFF;"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-database" style="color: #007BFF;"></i>
+        <p>SQL</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-react" style="color: #007BFF;"></i>
+        <p>React.js</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-python" style="color: #007BFF;"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-angular" style="color: #007BFF;"></i>
+        <p>Angular</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-php" style="color: #007BFF;"></i>
+        <p>PHP</p>
+      </div>
+    </div>
+  </section>
+  <section class="projetos animate-scroll" id="projetos">
+    <h2>Projetos</h2>
+    <div class="project-grid">
+      <div class="project-item">
+        <a href="https://portifolio-ecru-xi.vercel.app/" target="_blank">
+          <img src="Primeiro projeto.png" alt="Projeto 1" class="project-image">
+          <p>Primeiro Portfólio</p>
+        </a>
+      </div>
+      <div class="project-item">
+        <a href="https://j-ogo-da-menina-ruiva.vercel.app/" target="_blank">
+          <img src="WhatsApp Image 2025-10-19 at 00.21.15.jpeg" alt="Projeto 2" class="project-image">
+          <p>Primeiro Jogo</p>
+        </a>
+      </div>
+      <div class="project-item">
+        <a href="https://loja-gamer-bq8e.vercel.app/" target="_blank">
+          <img src="lojagamer.jpeg" alt="Projeto 3" class="project-image">
+          <p>Primeiro Site</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Imagem do Projeto">
   </div>
+<section class="contato" id="contato">
+  <h2>Entre em contato</h2>
+  <form action="mailto:paoladomingos234@gmail.com" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="form-group">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="4" required></textarea>
+    </div>
+    
+    <button type="submit" class="btn primary">Enviar</button>
+  </form>
+</section>
   <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
