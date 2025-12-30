@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagamento - Loja Paola Gamer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💳 Pagamento</h1>
+
+    <section class="resumo">
+      <h2>Resumo da compra</h2>
+      <ul id="listaItens"></ul>
+      <p id="totalCompra"></p>
+    </section>
+
+    <section class="form-pagamento">
+      <h2>Dados do Cartão</h2>
+      <input type="text" id="titular" placeholder="Nome do titular" required />
+      <input type="text" id="numero" maxlength="16" placeholder="Número do cartão" required />
+      <div class="linha">
+        <input type="text" id="validade" maxlength="5" placeholder="Validade (MM/AA)" required />
+        <input type="text" id="cvv" maxlength="3" placeholder="CVV" required />
+      </div>
+      <select id="forma">
+        <option value="cartao">Cartão de crédito</option>
+        <option value="pix">Pix</option>
+        <option value="boleto">Boleto</option>
+      </select>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+      <p class="pix-option">💜 Ou pague com Pix instantâneo 💜</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

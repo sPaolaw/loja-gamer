@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja Gamer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="bemvinda"></h1>
+    <input type="text" id="busca" placeholder="Pesquisar produto..." />
+    <div class="actions">
+      <div id="contadorCarrinho" title="Abrir carrinho" onclick="window.location.href='carrinho.html'">
+        🛒 <span id="qtdCarrinho">0</span>
+      </div>
+      <button onclick="sair()">Sair</button>
+    </div>
+  </header>
+
+  <main class="loja">
+    <section class="produtos" id="produtos"></section>
+  </main>
+
+  <footer>
+    <p>💜 Loja Gamer Desenvolvido por Paola Domingos💜</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
